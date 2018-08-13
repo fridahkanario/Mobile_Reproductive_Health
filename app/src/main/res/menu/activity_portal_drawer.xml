@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_schedule_appointment"
+            android:icon="@drawable/circle"
+            android:title="New Appointment" />
+        <item
+            android:id="@+id/nav_health_info"
+            android:icon="@drawable/circle"
+            android:title="Health Information" />
+        <item
+            android:id="@+id/nav_follow_up"
+            android:icon="@drawable/circle"
+            android:title="Prescription Followup" />
+        <item
+            android:id="@+id/nav_pre_visit_forms"
+            android:icon="@drawable/circle"
+            android:title="Fill Pre-Visit Forms" />
+
+        <item
+            android:id="@+id/nav_edit_region"
+            android:icon="@drawable/circle"
+            android:title="Edit Your Region" />
+
+        <item
+            android:id="@+id/nav_pregnancy"
+            android:icon="@drawable/circle"
+            android:title="Fetal Weekly notifications" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/circle"
+                android:title="Help" />
+
+        </menu>
+    </item>
+
+</menu>

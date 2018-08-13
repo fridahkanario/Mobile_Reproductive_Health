@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HelpActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="Antenatal care is the care you receive from healthcare professionals during your pregnancy. This care can be provided by a team that can include a doctor, a midwife, and usually with a doctor who specialises in pregnancy and birth (an obstetrician). \n\nFamily planning services are defined as educationa comprehensive medical or social activities which enable individuals, including minors,to determine freely the number and spacing of their children and to select the means by which this may be achieved. Family planning may involve consideration of the number of children a woman wishes to have, including the choice to have no children,as well as the age at which she wishes to have them.\n\nGynaecology or gynecology is the medical practice dealing with the health of the female reproductive systems (vagina, uterus, and ovaries) and the breasts. Outside medicine, the term means the science of women. Its counterpart is andrology, which deals with medical issues specific to the male reproductive system.Almost all modern gynaecologists are also obstetricians. In many areas, the specialities of gynaecology and obstetrics overlap."
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_intro"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_shape"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="CONNECT TO REPRODUCTIVE HEALTH FACILITY"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

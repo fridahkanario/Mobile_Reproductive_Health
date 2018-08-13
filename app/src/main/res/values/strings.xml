@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">M-Reproductive Health</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hint_name">Full Name</string>
+    <string name="hint_phone">PhoneNumber</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_phone">Enter Valid PhoneNumber</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_phone_exists">PhoneNumber Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_phone_password">Wrong PhoneNumber or Password</string>
+    <string name="action_Logout">LOGOUT</string>
+    <string name="text_hello">Hello,</string>
+    <string name="text_title">MOBILE REPRODUCTIVE HEALTH</string>
+    <string name="title_activity_home" />
+
+    <string-array name="location_array">
+        <item>Western</item>
+        <item>Eastern</item>
+        <item>North-Eastern</item>
+        <item>Central</item>
+        <item>Nairobi</item>
+        <item>Coast</item>
+        <item>Rift-Vally</item>
+        <item>Nyanza</item>
+    </string-array>
+    <string-array name="facility_array">
+        <item>Tunza</item>
+        <item>Nala</item>
+        <item>PGH</item>
+        <item>Aghakhan</item>
+        <item>Jumuia</item>
+        <item>pcea hospital</item>
+        <item>kk mission</item>
+        <item>mmust</item>
+    </string-array>
+    <string name="title_activity_health_facility">HealthFacilityActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_portal">PortalActivity</string>
+    <string name="pregnancy">set pregnancy date</string>
+
+
+    <string name="week2">It\'s a potentially life-changing week. You\'ll ovulate, and if egg meets sperm, you\'ll be on your way to pregnancy!</string>
+    <string name="week3">Your baby is a tiny ball – called a blastocyst – made up of several hundred cells that are multiplying quickly.!</string>
+    <string name="logout">Logout</string>
+    <string name="help1">Help</string>
+    <string name="help">Help</string>
+
+</resources>

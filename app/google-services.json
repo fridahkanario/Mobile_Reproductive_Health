@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1094757035766",
+    "firebase_url": "https://m-reproductivehealth.firebaseio.com",
+    "project_id": "m-reproductivehealth",
+    "storage_bucket": "m-reproductivehealth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094757035766:android:b3dad387dfefacf4",
+        "android_client_info": {
+          "package_name": "com.fusion.kim.m_reproductivehealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094757035766-qepfnhpuv5qsndl7sgsv7vl0lnjdm0pe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fusion.kim.m_reproductivehealth",
+            "certificate_hash": "f227392170a95f424807582c30206bd435ba2c9b"
+          }
+        },
+        {
+          "client_id": "1094757035766-3ts4u91r011ogekqrtlcb1va5t8je1i5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fusion.kim.m_reproductivehealth",
+            "certificate_hash": "4286fdb04e5724a30811143ca7e127c0bad4435e"
+          }
+        },
+        {
+          "client_id": "1094757035766-22btfuu93u46kapr06nb39e3m6pta9vu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqV4tOnb3za6ACfqWQd7FBqQFbZKRTDa4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094757035766-22btfuu93u46kapr06nb39e3m6pta9vu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

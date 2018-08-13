@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_date_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text=" 28-05-2018"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/tv_date_indicator"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_app_hospital_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospital: "
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_below="@+id/tv_time_indicator"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_app_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text=" Moi Teaching And Referral"
+        android:layout_toRightOf="@+id/tv_app_hospital_indicator"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_below="@+id/tv_time_indicator"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_time_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date_indicator"
+        android:text="Time: "
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text=" 1300"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_below="@+id/tv_date"
+        android:layout_toRightOf="@+id/tv_time_indicator"/>
+
+    <TextView
+        android:id="@+id/tv_doctor_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor: "
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_below="@id/tv_app_hospital"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text=" Laban"
+        android:layout_toRightOf="@id/tv_doctor_indicator"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_below="@id/tv_app_hospital"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_purpose_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purpose: "
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_below="@id/tv_doctor"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_purpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text=" Checkup"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/tv_purpose_indicator"
+        android:layout_below="@id/tv_doctor"
+        android:layout_marginTop="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/tv_purpose"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

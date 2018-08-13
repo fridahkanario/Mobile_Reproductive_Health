@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_antenatal_care"
+            android:icon="@drawable/circle"
+            android:title="Antenatal Care" />
+        <item
+            android:id="@+id/nav_fp_services"
+            android:icon="@drawable/circle"
+            android:title="Family Planning Services" />
+        <item
+            android:id="@+id/nav_gyna_medical"
+            android:icon="@drawable/circle"
+            android:title="Gyna Medical" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/circle"
+            android:title="Notifications" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/circle"
+                android:title="Help" />
+        </menu>
+    </item>
+
+</menu>

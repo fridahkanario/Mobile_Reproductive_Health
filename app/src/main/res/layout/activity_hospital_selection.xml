@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".HospitalSelectionActivity"
+    android:background="#ededed">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/tv_selection_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="17sp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Please Select a Hospital below:"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_selection_header"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/tv_region_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Your Region: "
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                tools:text="Kakamega County"
+                android:layout_below="@+id/tv_region_indicator"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageView
+                android:id="@+id/iv_edit_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_edit_white_18"
+                android:background="@drawable/circle"
+                android:padding="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="invisible"/>
+
+            <ProgressBar
+                android:id="@+id/pb_regions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/colorPrimary"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_hospitals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv_region"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#ffffff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_available_hospitals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:text="Hospitals in Kakamega County:"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingVertical="3dp"
+                    android:paddingHorizontal="8dp"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_available_hospitals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_available_hospitals"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/rectangle"
+                    android:padding="8dp"
+                    android:minHeight="200dp"
+                    android:nestedScrollingEnabled="false">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <ProgressBar
+                    android:id="@+id/pb_hospitals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateTintMode="src_atop"
+                    android:indeterminateTint="@color/colorPrimary"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_selected_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cv_hospitals"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#ffffff">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="16dp"
+                android:paddingHorizontal="5dp">
+
+                <TextView
+                    android:id="@+id/tv_selected_hospital_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:text="Selected Hospital: "
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:paddingVertical="3dp"
+                    android:paddingHorizontal="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_selected_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:text="None"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/tv_selected_hospital_indicator"
+                    android:paddingVertical="3dp"
+                    android:paddingHorizontal="8dp"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_submit_hopsitals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@+id/cv_selected_hospital"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_shape"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="0dp"/>
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
